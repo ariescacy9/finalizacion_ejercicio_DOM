@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?famimy-Poppins:wgth@300;400;500;600;700&display=swap');
+ * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins' sans-serif ;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.container {
+  background-color: #006aa9;
+  background-image: linear-gradient(0deg, #006aa9 0%, #80f5e5 100% );
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 50%;
+  max-width: 70%;
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  height: 80%;
+  box-shadow: 0 0 .5rem #505050;
+}
+
+.list {
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+
+.input {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+  color: #505050;
+  letter-spacing: .1rem;
+}
+
+.input div {
+  display: flex;
+}
+
+.todo_input__input {
+  border: thin solid #ccc;
+  flex-grow: 1;
+  padding: .5rem;
+  outline: none;
+}
+
+.todo_input__input:hover {
+  border: thin solid #61d8c0;
+}
+
+.todo_input__input:active {
+  border: thin solid #cf70e7;
+}
+
+.todo_input__input:focus {
+  border: thin solid #447df8;
+}
+
+.todo_input_btn {
+  outline: none;
+  border: thin solid #cf70e7;
+  padding: .5rem;
+  cursor: pointer;
+  background-color: #cf70e7;
+  color: white;
+}
+
+.footer {
+  padding: 2rem;
+}
+
+.footer__title {
+  text-align: center;
+  color: #447df8;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 .5px #ccc ;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cf70e7;
+  border-radius: 10px;
+}
+
+.list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.list ul li i {
+  cursor: pointer;
+  padding: 1rem;
+  color: red;
+}
+
+.list ul li i :hover{
+  background-color: #b3a6a6;
+}
